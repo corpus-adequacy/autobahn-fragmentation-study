@@ -1,0 +1,1 @@
+{"cases":["5.6"],"exclude-agent-cases":{},"exclude-cases":[],"options":{"closeHandshakeTimeout":1,"failByDrop":false,"openHandshakeTimeout":5,"serverConnectionDropTimeout":1},"outdir":"/evidence/reports","servers":[{"agent":"owned-pilot","url":"ws://127.0.0.1:19000"}]}
