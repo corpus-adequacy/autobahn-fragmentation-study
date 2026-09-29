@@ -1,6 +1,8 @@
-# Autobahn fragmentation comparison — review version 1 (2026-09-29)
+# Autobahn fragmentation comparison — review version 2 (2026-09-29)
 
-Prepared for public review; this local copy has not been published. The raw reports remain private. This version must not be overwritten after sharing; corrections require a new version. ## 1. Bounded result
+Public review version. The raw reports remain private. This version must not be overwritten after sharing; corrections require a new version.
+
+## 1. Bounded result
 
 The accompanying table was extracted from the 30 retained original case reports. Each cell below was identical in all three repetitions. Tuples are `(behavior, behaviorClose)`.
 
@@ -25,7 +27,7 @@ The stock sources are fixed at `b8a5120d905e30470e4475785c48e4cedc35f6cd`:
 - [Case 5.6](https://github.com/crossbario/autobahn-testsuite/blob/b8a5120d905e30470e4475785c48e4cedc35f6cd/autobahntestsuite/autobahntestsuite/case/case5_6.py): TEXT (FIN=0), PING (FIN=1), CONT (FIN=1). The case expects Pong followed by the complete echoed text. Our P control suppresses Pong while fragmentation is active, not all Pongs.
 - [Case 5.18](https://github.com/crossbario/autobahn-testsuite/blob/b8a5120d905e30470e4475785c48e4cedc35f6cd/autobahntestsuite/autobahntestsuite/case/case5_18.py): TEXT (FIN=0), then TEXT (FIN=1) instead of CONT. Our M variant ignores the unexpected second TEXT rather than closing at that point. Stock 5.18 does not send our separate continuation challenge.
 
-P targets handling control frames during fragmentation and replying to Ping ([RFC 6455 §5.4](https://www.rfc-editor.org/rfc/rfc6455.html#section-5.4), [§5.5.2](https://www.rfc-editor.org/rfc/rfc6455.html#section-5.5.2); the Ping reply requirement has a received-Close exception). M targets the continuation-opcode rule (§5.4) and the required failure on an unexpected opcode ([§6.2](https://www.rfc-editor.org/rfc/rfc6455.html#section-6.2)). These are the intended normative targets, not a claim that every changed verdict establishes an observed RFC violation. RFC attribution for M/5.18 remains inconclusive in the retained interpretation.
+P targets handling control frames during fragmentation and replying to Ping ([RFC 6455 §5.4](https://www.rfc-editor.org/rfc/rfc6455.html#section-5.4), [§5.5.2](https://www.rfc-editor.org/rfc/rfc6455.html#section-5.5.2); the Ping reply requirement has a received-Close exception). M targets the continuation-opcode rule in §5.4: subsequent fragments use opcode 0. TEXT is a known opcode used in an invalid fragmentation sequence here; this is not the unknown-opcode condition in §5.2. The pinned stock case 5.18 expects immediate connection failure. We distinguish that case expectation from a claim that §6.2 explicitly states an unexpected-opcode failure rule. These are the intended normative targets, not a claim that every changed verdict establishes an observed RFC violation. RFC attribution for M/5.18 remains inconclusive in the retained interpretation.
 
 ### 2.2 Exact configuration
 
@@ -85,9 +87,11 @@ The suite ran in `fuzzingclient` mode through its config/CLI interface. These ar
 
 ### 2.3 Verdict and Close fields
 
-[case-results.csv](case-results.csv) contains all 30 executions, including `(behavior, behaviorClose)` and the original `localCloseCode`, `localCloseReason`, `remoteCloseCode`, and `remoteCloseReason`. Local and remote are from the suite endpoint's perspective. These are recorded suite fields, not independently verified wire observations. They are copied directly from the original case reports, without using the recovered interpretation to fill any field.
+[case-results.csv](case-results.csv) contains all 30 executions, including `(behavior, behaviorClose)` and the original `localCloseCode`, `localCloseReason`, `remoteCloseCode`, and `remoteCloseReason`, plus `closedByMe`, `wasCloseHandshakeTimeout`, and `resultClose`. Local and remote are from the suite endpoint's perspective. These are recorded suite fields, not independently verified wire observations. They are copied directly from the original case reports, without using the recovered interpretation to fill any field.
 
-[case-results.json](case-results.json) preserves JSON null values and types; CSV uses literal `null` for JSON null and an empty cell for an empty string. Each row includes its original report SHA-256. All original report bytes were rehashed during preparation of this version.
+[case-results.json](case-results.json) preserves JSON null values and types; CSV uses literal `null` for JSON null and an empty cell for an empty string. Boolean values in CSV use `true` and `false`. Each row includes its original report SHA-256. All original report bytes were rehashed during preparation of this version.
+
+In all three P/5.6 reports, all four Close code/reason fields are `null`; `closedByMe` is `true`, `wasCloseHandshakeTimeout` is `false`, and `resultClose` is "Connection was properly closed". In all three M/5.18 reports, both codes are `1001`, both reasons are "Going Away", `closedByMe` is `true`, `wasCloseHandshakeTimeout` is `false`, and `resultClose` is "The connection was failed by the wrong endpoint". These are suite-recorded observations, not an independent wire reconstruction. We do not describe the M result as a recorded Close-handshake timeout or as correct server handling of the protocol error. `resultClose` is the suite diagnostic, not a received Close reason.
 
 Thirty executions reached complete terminal records; that is not a claim of zero inconclusive findings. The original end-to-end command failed in postprocessing (§3), and RFC attribution remains inconclusive. A changed closing-handshake verdict alone does not establish forbidden server octets. No RFC-invalid server wire behavior with a green stock verdict was established, and no aggregate adequacy score is reported.
 
@@ -108,3 +112,7 @@ A subsequent read-only review by an AI code-review agent (Muse) recomputed the r
 The result is a bounded comparison of declared stock outcomes on retained evidence. This summary does not release the underlying raw records. A review of the testsuite description must not be presented as validation of the measurements, endorsement, or a review of data the reviewer has not inspected.
 
 Prepared with AI assistance; the table was checked against the retained original reports.
+
+## 5. Version history
+
+Review version 2 corrects the publication-status line and section heading, adds three suite diagnostic fields for every execution, and corrects the normative reference in §2.1. Version 1 remains available at commit `76843a2624ed4f5c833b400fbee106250f07a338`. No case was rerun and no declared verdict changed.

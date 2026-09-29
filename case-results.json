@@ -10,7 +10,10 @@
     "localCloseCode": 1000,
     "localCloseReason": null,
     "remoteCloseCode": 1000,
-    "remoteCloseReason": null
+    "remoteCloseReason": null,
+    "closedByMe": true,
+    "wasCloseHandshakeTimeout": false,
+    "resultClose": "Connection was properly closed"
   },
   {
     "variant": "R",
@@ -23,7 +26,10 @@
     "localCloseCode": 1000,
     "localCloseReason": null,
     "remoteCloseCode": 1000,
-    "remoteCloseReason": null
+    "remoteCloseReason": null,
+    "closedByMe": true,
+    "wasCloseHandshakeTimeout": false,
+    "resultClose": "Connection was properly closed"
   },
   {
     "variant": "R",
@@ -36,7 +42,10 @@
     "localCloseCode": 1000,
     "localCloseReason": null,
     "remoteCloseCode": 1000,
-    "remoteCloseReason": null
+    "remoteCloseReason": null,
+    "closedByMe": true,
+    "wasCloseHandshakeTimeout": false,
+    "resultClose": "Connection was properly closed"
   },
   {
     "variant": "R",
@@ -49,7 +58,10 @@
     "localCloseCode": 1000,
     "localCloseReason": null,
     "remoteCloseCode": 1002,
-    "remoteCloseReason": "expected a continuation frame"
+    "remoteCloseReason": "expected a continuation frame",
+    "closedByMe": false,
+    "wasCloseHandshakeTimeout": false,
+    "resultClose": "Connection was properly closed"
   },
   {
     "variant": "R",
@@ -62,7 +74,10 @@
     "localCloseCode": 1000,
     "localCloseReason": null,
     "remoteCloseCode": 1002,
-    "remoteCloseReason": "expected a continuation frame"
+    "remoteCloseReason": "expected a continuation frame",
+    "closedByMe": false,
+    "wasCloseHandshakeTimeout": false,
+    "resultClose": "Connection was properly closed"
   },
   {
     "variant": "R",
@@ -75,7 +90,10 @@
     "localCloseCode": 1000,
     "localCloseReason": null,
     "remoteCloseCode": 1002,
-    "remoteCloseReason": "expected a continuation frame"
+    "remoteCloseReason": "expected a continuation frame",
+    "closedByMe": false,
+    "wasCloseHandshakeTimeout": false,
+    "resultClose": "Connection was properly closed"
   },
   {
     "variant": "B",
@@ -88,7 +106,10 @@
     "localCloseCode": 1000,
     "localCloseReason": null,
     "remoteCloseCode": 1000,
-    "remoteCloseReason": null
+    "remoteCloseReason": null,
+    "closedByMe": true,
+    "wasCloseHandshakeTimeout": false,
+    "resultClose": "Connection was properly closed"
   },
   {
     "variant": "B",
@@ -101,7 +122,10 @@
     "localCloseCode": 1000,
     "localCloseReason": null,
     "remoteCloseCode": 1000,
-    "remoteCloseReason": null
+    "remoteCloseReason": null,
+    "closedByMe": true,
+    "wasCloseHandshakeTimeout": false,
+    "resultClose": "Connection was properly closed"
   },
   {
     "variant": "B",
@@ -114,7 +138,10 @@
     "localCloseCode": 1000,
     "localCloseReason": null,
     "remoteCloseCode": 1000,
-    "remoteCloseReason": null
+    "remoteCloseReason": null,
+    "closedByMe": true,
+    "wasCloseHandshakeTimeout": false,
+    "resultClose": "Connection was properly closed"
   },
   {
     "variant": "B",
@@ -127,7 +154,10 @@
     "localCloseCode": 1000,
     "localCloseReason": null,
     "remoteCloseCode": 1002,
-    "remoteCloseReason": null
+    "remoteCloseReason": null,
+    "closedByMe": false,
+    "wasCloseHandshakeTimeout": false,
+    "resultClose": "Connection was properly closed"
   },
   {
     "variant": "B",
@@ -140,7 +170,10 @@
     "localCloseCode": 1000,
     "localCloseReason": null,
     "remoteCloseCode": 1002,
-    "remoteCloseReason": null
+    "remoteCloseReason": null,
+    "closedByMe": false,
+    "wasCloseHandshakeTimeout": false,
+    "resultClose": "Connection was properly closed"
   },
   {
     "variant": "B",
@@ -153,7 +186,10 @@
     "localCloseCode": 1000,
     "localCloseReason": null,
     "remoteCloseCode": 1002,
-    "remoteCloseReason": null
+    "remoteCloseReason": null,
+    "closedByMe": false,
+    "wasCloseHandshakeTimeout": false,
+    "resultClose": "Connection was properly closed"
   },
   {
     "variant": "I",
@@ -166,7 +202,10 @@
     "localCloseCode": 1000,
     "localCloseReason": null,
     "remoteCloseCode": 1000,
-    "remoteCloseReason": null
+    "remoteCloseReason": null,
+    "closedByMe": true,
+    "wasCloseHandshakeTimeout": false,
+    "resultClose": "Connection was properly closed"
   },
   {
     "variant": "I",
@@ -179,7 +218,10 @@
     "localCloseCode": 1000,
     "localCloseReason": null,
     "remoteCloseCode": 1000,
-    "remoteCloseReason": null
+    "remoteCloseReason": null,
+    "closedByMe": true,
+    "wasCloseHandshakeTimeout": false,
+    "resultClose": "Connection was properly closed"
   },
   {
     "variant": "I",
@@ -192,7 +234,10 @@
     "localCloseCode": 1000,
     "localCloseReason": null,
     "remoteCloseCode": 1000,
-    "remoteCloseReason": null
+    "remoteCloseReason": null,
+    "closedByMe": true,
+    "wasCloseHandshakeTimeout": false,
+    "resultClose": "Connection was properly closed"
   },
   {
     "variant": "I",
@@ -205,7 +250,10 @@
     "localCloseCode": 1000,
     "localCloseReason": null,
     "remoteCloseCode": 1002,
-    "remoteCloseReason": null
+    "remoteCloseReason": null,
+    "closedByMe": false,
+    "wasCloseHandshakeTimeout": false,
+    "resultClose": "Connection was properly closed"
   },
   {
     "variant": "I",
@@ -218,7 +266,10 @@
     "localCloseCode": 1000,
     "localCloseReason": null,
     "remoteCloseCode": 1002,
-    "remoteCloseReason": null
+    "remoteCloseReason": null,
+    "closedByMe": false,
+    "wasCloseHandshakeTimeout": false,
+    "resultClose": "Connection was properly closed"
   },
   {
     "variant": "I",
@@ -231,7 +282,10 @@
     "localCloseCode": 1000,
     "localCloseReason": null,
     "remoteCloseCode": 1002,
-    "remoteCloseReason": null
+    "remoteCloseReason": null,
+    "closedByMe": false,
+    "wasCloseHandshakeTimeout": false,
+    "resultClose": "Connection was properly closed"
   },
   {
     "variant": "P",
@@ -244,7 +298,10 @@
     "localCloseCode": null,
     "localCloseReason": null,
     "remoteCloseCode": null,
-    "remoteCloseReason": null
+    "remoteCloseReason": null,
+    "closedByMe": true,
+    "wasCloseHandshakeTimeout": false,
+    "resultClose": "Connection was properly closed"
   },
   {
     "variant": "P",
@@ -257,7 +314,10 @@
     "localCloseCode": null,
     "localCloseReason": null,
     "remoteCloseCode": null,
-    "remoteCloseReason": null
+    "remoteCloseReason": null,
+    "closedByMe": true,
+    "wasCloseHandshakeTimeout": false,
+    "resultClose": "Connection was properly closed"
   },
   {
     "variant": "P",
@@ -270,7 +330,10 @@
     "localCloseCode": null,
     "localCloseReason": null,
     "remoteCloseCode": null,
-    "remoteCloseReason": null
+    "remoteCloseReason": null,
+    "closedByMe": true,
+    "wasCloseHandshakeTimeout": false,
+    "resultClose": "Connection was properly closed"
   },
   {
     "variant": "P",
@@ -283,7 +346,10 @@
     "localCloseCode": 1000,
     "localCloseReason": null,
     "remoteCloseCode": 1002,
-    "remoteCloseReason": null
+    "remoteCloseReason": null,
+    "closedByMe": false,
+    "wasCloseHandshakeTimeout": false,
+    "resultClose": "Connection was properly closed"
   },
   {
     "variant": "P",
@@ -296,7 +362,10 @@
     "localCloseCode": 1000,
     "localCloseReason": null,
     "remoteCloseCode": 1002,
-    "remoteCloseReason": null
+    "remoteCloseReason": null,
+    "closedByMe": false,
+    "wasCloseHandshakeTimeout": false,
+    "resultClose": "Connection was properly closed"
   },
   {
     "variant": "P",
@@ -309,7 +378,10 @@
     "localCloseCode": 1000,
     "localCloseReason": null,
     "remoteCloseCode": 1002,
-    "remoteCloseReason": null
+    "remoteCloseReason": null,
+    "closedByMe": false,
+    "wasCloseHandshakeTimeout": false,
+    "resultClose": "Connection was properly closed"
   },
   {
     "variant": "M",
@@ -322,7 +394,10 @@
     "localCloseCode": 1000,
     "localCloseReason": null,
     "remoteCloseCode": 1000,
-    "remoteCloseReason": null
+    "remoteCloseReason": null,
+    "closedByMe": true,
+    "wasCloseHandshakeTimeout": false,
+    "resultClose": "Connection was properly closed"
   },
   {
     "variant": "M",
@@ -335,7 +410,10 @@
     "localCloseCode": 1000,
     "localCloseReason": null,
     "remoteCloseCode": 1000,
-    "remoteCloseReason": null
+    "remoteCloseReason": null,
+    "closedByMe": true,
+    "wasCloseHandshakeTimeout": false,
+    "resultClose": "Connection was properly closed"
   },
   {
     "variant": "M",
@@ -348,7 +426,10 @@
     "localCloseCode": 1000,
     "localCloseReason": null,
     "remoteCloseCode": 1000,
-    "remoteCloseReason": null
+    "remoteCloseReason": null,
+    "closedByMe": true,
+    "wasCloseHandshakeTimeout": false,
+    "resultClose": "Connection was properly closed"
   },
   {
     "variant": "M",
@@ -361,7 +442,10 @@
     "localCloseCode": 1001,
     "localCloseReason": "Going Away",
     "remoteCloseCode": 1001,
-    "remoteCloseReason": "Going Away"
+    "remoteCloseReason": "Going Away",
+    "closedByMe": true,
+    "wasCloseHandshakeTimeout": false,
+    "resultClose": "The connection was failed by the wrong endpoint"
   },
   {
     "variant": "M",
@@ -374,7 +458,10 @@
     "localCloseCode": 1001,
     "localCloseReason": "Going Away",
     "remoteCloseCode": 1001,
-    "remoteCloseReason": "Going Away"
+    "remoteCloseReason": "Going Away",
+    "closedByMe": true,
+    "wasCloseHandshakeTimeout": false,
+    "resultClose": "The connection was failed by the wrong endpoint"
   },
   {
     "variant": "M",
@@ -387,6 +474,9 @@
     "localCloseCode": 1001,
     "localCloseReason": "Going Away",
     "remoteCloseCode": 1001,
-    "remoteCloseReason": "Going Away"
+    "remoteCloseReason": "Going Away",
+    "closedByMe": true,
+    "wasCloseHandshakeTimeout": false,
+    "resultClose": "The connection was failed by the wrong endpoint"
   }
 ]

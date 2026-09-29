@@ -1,18 +1,18 @@
 {
-  "version": "2026-09-29-v1",
+  "version": "2026-09-29-v2",
   "scope": "summary and extracted fields; raw reports excluded",
   "files": {
     "REPORT.md": {
-      "sha256": "4d7231b43cd262f354677b48b0b6a81eb3b4e2e45ffd9eddac5f94c67e0fb182",
-      "bytes": 8589
+      "sha256": "4fc9b2344f9dc548a065d38bdf5255d689792585816839a90009d3fa952a5598",
+      "bytes": 9894
     },
     "case-results.csv": {
-      "sha256": "e607db10bb90f84628369e367711cbd13606d3c8f28bfe8bb9a26320c3374992",
-      "bytes": 4003
+      "sha256": "e83b29c258644340833826f8d90094b55248e775fbdd80738f856be3ddb4f30b",
+      "bytes": 5374
     },
     "case-results.json": {
-      "sha256": "ed8d65563f0401d2454d136490c20581de6391e9fcae5b45624f04d5756d341f",
-      "bytes": 11556
+      "sha256": "563e4ca924648a5d516984a8ae95dc026340ee4b7a893dc3e2d5e706fdf5349b",
+      "bytes": 15099
     },
     "pins-and-recovery.json": {
       "sha256": "6d6a39599111e2dd8318a8ad9e2fbe22528f1fda830ac3c277c1ca869d3c8236",
